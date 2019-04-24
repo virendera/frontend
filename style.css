@@ -1,0 +1,138 @@
+/*********************************
+
+Phone directory stylesheet 
+created by Virender on 24/04/2019
+
+
+*********************************/
+
+.body{
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.323);
+	-webkit-font-smoothing: antialiased;  
+	font-smoothing: antialiased;
+	transition: all 1.1s ease-in-out;
+	background-color: #eee;
+}
+h1,h2,h3,h4,h5
+
+{ 
+	font-weight: 300;
+	font-size: 3rem;
+	transition: all 1.1s ease-in-out;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.323);
+	line-height: 20px
+}
+.header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 60px;
+	text-align: center;
+	font-size: 15px;
+	background-image: linear-gradient(#FFF, #CCC);
+	background-attachment: fixed;
+	-webkit-box-sizing: border-box;
+	-webkit-justify-content: center;
+	z-index: 10;
+}
+.header-light {
+	color: #5cb85c;
+    border-bottom: solid 1px rgba(0,0,0,0.05);
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.15);
+    }
+ 
+#list
+{
+	background-color: #C0C0;
+    width: 80%;
+    height: auto;
+    min-height: 80%;
+    position: relative;
+    top: 80px;
+}
+.box
+{
+     /*border: 1px solid whitesmoke; */
+     margin: 1%;
+}
+.filter
+{
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.modal-dialog {
+	width: 500px;
+	display: none;
+	position: absolute;
+	margin: auto;
+	top: 100px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+.danger {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #f44455;
+    outline: 0;
+}
+.dark-white {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #fff;
+    outline: 0;
+    }
+.success {
+    background-color: #4caf50;
+    color: rgba(255, 255, 255, 0.87);
+    outline: 0;
+}
+
+ol
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+li
+{
+	padding:2% 0px 2% 0px;
+}
+
+.space
+{
+	padding: 1%;
+}
+
+
+
+
+
+/*changeing default apperance browser scrollbar */
+
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5cb85c;
+  opacity: 0.2;
+  border-radius: 1px;
+  box-shadow: 1px 1px 10px 1px #5cb85c; }
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #5cb85c;
+  box-shadow: 1px 1px 10px 1px #c7c7c7;
+  opacity: 0.2;
+  border-radius: 1px;
+  box-shadow: 1px 1px 10px 1px #5cb85c; }
