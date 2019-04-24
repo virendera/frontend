@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Phone Directory</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Virender" />
+	<!-- bootstrap.min.css-->
+	<link rel="stylesheet" href="bootstrap.min.css">
+		<!-- Style.css -->
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>	
+	<div class="filter">
+		
+		<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+ 		<h5 class="modal-title">Add New Contact to Phone Directory</h5> 
+      </div>
+      <div class="modal-body p-lg">
+ 			<div class="box">
+				<div class="row">
+					<div class="col-sm-6"><b>Name</b></div>
+					<div class="col-sm-6"><input type="text" id="name" requited placeholder="Contact Name" class="form-control rounded"></div>
+				</div>
+				<div class="space"></div>
+				<div class="row">
+					<div class="col-sm-6"><b>Phone</b></div>		
+					<div class="col-sm-6"><input type="text" id="phone" requited placeholder="Contact number" class="form-control rounded"></div>
+				</div>
+			</div>
+ 			<div class="box">
+				<div class="row">
+					<div class="col-sm-3"><p><em >Name:<b id="rname"></b></em></p></div>
+					<div class="col-sm-9"><b></b></div>
+				</div>
+					<div class="space"></div>
+				<div class="row">
+					<div class="col-sm-3"><em >Phone:<b id="rphone"></b></em></div>		
+					<div class="col-sm-9"><b></b></div>
+				</div>
+ 			</div>
+      </div>
+      <div class="modal-footer">
+		 <button type="button" id="close" class="btn btn-fw danger" >Close</button>  
+         <button type="button" id="save" class="btn btn-fw success" >Save</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div>
+
+	</body>
+
+	</div>
+	<div id="page">
+		<div class="header header-light header-logo-app header-round" style="transition: all 350ms ease 0s; transform: translateY(0px);">
+			<h1>Phone Directory</h1>
+		    </div>
+		<div class="container" id="list">
+			<div class="box">
+				<button type="button" id="add" class="btn btn-fw success">Add</button>
+			</div>
+			<div class="box">
+				<div class="row">
+					<div class="col-sm-6"><b>Name</b></div>
+					<div class="col-sm-4"><b>Number</b></div>
+					<div class="col-sm-2"><b>Action</b></div>		
+				</div>
+				<div class="row">
+					<ol id="ol">
+ 					</ol>
+				</div>
+			</div>
+		</div>
+ 
+	</div>
+
+	<!-- jQuery -->
+	<script src="jquery.min.js"></script>
+	<script src="script.js"></script>
+</html>
+
